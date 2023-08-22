@@ -1,0 +1,81 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(89,25,57);
+    background: linear-gradient(90deg, rgba(89,25,57,1) 0%, rgba(88,2,85,1) 35%);
+    color: white;
+    font-family: sans-serif;
+}
+
+.home-root-element {
+    width: 100%;
+    height: 100vh;
+    
+
+    .header-root-element {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .links-class {
+            width: 50%;
+            .list-of-links {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+
+                .header-links {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .home-body-class {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .category-root-element {
+            width: 20%;
+        
+            .category-li{
+                list-style-type: none;
+                font-size: 20px;
+                margin-top: .5rem;
+                cursor: pointer;
+        
+                .category-button {
+                    width: 50%;
+                    background: none;
+                    border: 1px solid white;
+                    font-size: 20px;
+                    color: white;
+                    padding: .3rem;
+                    cursor: pointer;
+                }
+        
+            }
+        }
+
+        .avaiable-cars-class {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+            padding-bottom: 1rem;
+            .cars-card {
+                border: 1px solid white;
+                padding: .3rem;
+                .car-image {
+                    max-width: 320px;
+                }
+            }
+        }
+    }
+}
